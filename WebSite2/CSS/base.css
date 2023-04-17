@@ -1,0 +1,66 @@
+
+* {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem/*=16px*/; /* chiều cao chữ */
+}
+/* Responsive */
+.grid { /* tương thích độ rộng màn hình */
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row { /* giúp các phần tử nằm ngang và xuống dòng */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(
+        100% - 16.6667%
+    );
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.select-input {
+    height:34px;
+    padding: 0 12px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius:2px;
+    background-color: white;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.select-input__icon {
+    position: relative;
+    font-size: 1.4rem;
+    color: rgb(52, 51, 51);
+    top:-1px;
+}
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
